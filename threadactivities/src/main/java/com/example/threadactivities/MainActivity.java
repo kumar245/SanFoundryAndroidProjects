@@ -21,11 +21,12 @@ public class MainActivity extends AppCompatActivity {
                } catch (InterruptedException e) {
                    e.printStackTrace();
                }
+               finally {
+                   finish();
+               }
 
            }
        };
        thread.start();
-
-
     }
 }
